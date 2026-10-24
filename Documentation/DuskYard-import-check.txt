@@ -1,0 +1,7 @@
+DUSK YARD IMPORT CONFIGURED
+Unity: 6000.4.4f1
+HDRP: DuskHDRP
+Scene opened: True
+Input: Input System with legacy fallback
+Dependency/shader errors: 0
+Visual and Play-mode validation still required.
