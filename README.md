@@ -99,7 +99,7 @@ Progressive CPU / Shadowmask, lightmap resolution 6 texels/m, atlas 1024, direct
 
 Генераторы YardBuilder/Finalize/ArtPass/Showcase/VisualPolish оставлены как инструменты разработки. Их повторный запуск может восстанавливать предыдущие этапы геометрии/материалов; не использовать их вместо открытия готовой сцены. Для анализа raw snapshots распаковать Verification ZIP в Deliverables и вызвать `DuskYardMemoryAnalysis.Run`.
 
-Git исключает Library/Temp/Logs/UserSettings/Builds и локальную историю. Source ZIP — текущее состояние; **DuskYard.bundle** содержит репозиторий с историей (`git clone DuskYard.bundle DuskYard`). `LightingData.asset` помечен binary, его байты и состав ZIP проверяются перед передачей; контрольные суммы — Deliverables/SHA256.txt.
+Git исключает Library/Temp/Logs/UserSettings/Builds и локальную историю. Source ZIP — текущее состояние; **DuskYard.bundle** содержит репозиторий с историей (`git clone DuskYard.bundle DuskYard`). `LightingData.asset` помечен binary, его байты и состав ZIP проверяются перед передачей; контрольные суммы — Deliverables/READY-TO-SEND/SHA256.txt.
 
 ## Сторонние ресурсы
 
@@ -110,3 +110,5 @@ Poly Haven, **CC0**: `castle_brick_01`, `cobblestone_floor_02`, `oak_wood_planks
 **SUBMISSION.md** описывает файлы для передачи и содержит заготовку сопроводительного сообщения. **Documentation/REQUIREMENTS.md** — 70 атомарных условий исходного PDF с реализацией и доказательствами; исходник/извлечённый текст/SHA256 приложены. **TIMELOG.md** честно отделяет измеренные интервалы тестов от отсутствующего исторического учёта по блокам. Он не восстановлен задним числом.
 
 По предыдущему решению пользователя комплект пока локальный. Для внешней сдачи потребуется загрузить проект/репозиторий и отдельный Windows build на выбранный диск и дать реальные ссылки. Локальные пути не выдаются за облачные. Полное безусловное соответствие не заявляется в части неизвестного исторического времени и ещё не созданной внешней ссылки.
+
+Итоговые архивы для передачи собраны отдельно в **Deliverables/READY-TO-SEND**, чтобы не перепутать их с предыдущими итерациями.

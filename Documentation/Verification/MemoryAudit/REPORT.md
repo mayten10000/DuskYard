@@ -27,3 +27,5 @@
 Raw before.snap/after.snap находятся в Deliverables/MemoryAudit и входят в отдельный DuskYard-Verification.zip. Для повторного анализа распаковать его в Deliverables и вызвать DuskYardMemoryAnalysis.Run. Никакой внешний runtime-плагин для захвата/анализа не добавлялся.
 
 Последние 45 с временного ряда: диапазон 141885082–141900346 байт, изменение между первой/последней выборкой -8632 байт. Кривая выходит на плато после расширения пулов; график: memory-trend.png.
+
+График воспроизводится Documentation/Plot-Memory.ps1 стандартной Windows Charting library.
