@@ -1,0 +1,8 @@
+Poly Haven assets — CC0 1.0 Universal
+Assets: castle_brick_01, cobblestone_floor_02, oak_wood_planks.
+Original photographs / scans from Poly Haven, not authored by this project.
+Asset URLs and download hashes: Documentation/PolyHaven-sources.json
+License: https://polyhaven.com/license
+CC0: https://creativecommons.org/publicdomain/zero/1.0/
+Powered by Poly Haven (asset acquisition API). No live API access in the game.
+HDRI: qwantani_dusk_1_puresky (Poly Haven, CC0).

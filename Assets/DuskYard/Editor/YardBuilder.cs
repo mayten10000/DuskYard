@@ -10,8 +10,9 @@ public static class YardBuilder {
  static Material stone,wood,iron,wet,cloth;
  static GameObject Box(string n, Vector3 p, Vector3 s, Material m,Transform parent=null,PrimitiveType type=PrimitiveType.Cube){var g=GameObject.CreatePrimitive(type);g.name=n;g.transform.SetParent(parent);g.transform.position=p;g.transform.localScale=s;g.GetComponent<Renderer>().sharedMaterial=m;return g;}
  static Material Mat(string name,Color color,float smooth=0,float metal=0){var m=new Material(Shader.Find("HDRP/Lit"));m.SetColor("_BaseColor",color);m.SetFloat("_Smoothness",smooth);m.SetFloat("_Metallic",metal);AssetDatabase.CreateAsset(m,"Assets/DuskYard/Materials/"+name+".mat");return m;}
- [MenuItem("Dusk Yard/Generate scene")]
+ [MenuItem("Dusk Yard/Tools/Generate initial prototype in empty project")]
  public static void Generate(){
+  if(AssetDatabase.LoadAssetAtPath<SceneAsset>("Assets/DuskYard/Scenes/DuskYard.unity")!=null)throw new System.InvalidOperationException("Scene already exists. Use Apply corrections and bake instead.");
   System.IO.Directory.CreateDirectory("Assets/DuskYard/Materials");System.IO.Directory.CreateDirectory("Assets/DuskYard/Scenes");System.IO.Directory.CreateDirectory("Assets/DuskYard/Prefabs");System.IO.Directory.CreateDirectory("Assets/DuskYard/Settings");
   var pipeline=ScriptableObject.CreateInstance<HDRenderPipelineAsset>();AssetDatabase.CreateAsset(pipeline,"Assets/DuskYard/Settings/DuskHDRP.asset");GraphicsSettings.defaultRenderPipeline=pipeline;QualitySettings.renderPipeline=pipeline;
   PlayerSettings.colorSpace=ColorSpace.Linear;PlayerSettings.defaultScreenWidth=1920;PlayerSettings.defaultScreenHeight=1080;PlayerSettings.fullScreenMode=FullScreenMode.Windowed;PlayerSettings.companyName="DuskYard";PlayerSettings.productName="Dusk Yard";

@@ -154,7 +154,6 @@ MonoBehaviour:
       sssCustomDownsampleSteps: 0
       msaaMode: 1
       materialQuality: 0
-  m_Version: 14
   m_Settings:
     m_SettingsList:
       m_List:
@@ -218,8 +217,6 @@ MonoBehaviour:
       - rid: 572651500614975522
       - rid: 572651500614975523
       - rid: 572651500614975526
-      - rid: 572651500614975527
-      - rid: 572651500614975528
   renderingLayerNames:
   - Default
   lightLayerName0: 
@@ -245,9 +242,12 @@ MonoBehaviour:
     obsoleteHasProbeVolumes:
       m_Keys: []
       m_Values: 
+  m_Version: 14
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 572651500614975491
       type: {class: RayTracingRenderPipelineResources, ns: UnityEngine.Rendering.UnifiedRayTracing, asm: Unity.UnifiedRayTracing.Runtime}
       data:

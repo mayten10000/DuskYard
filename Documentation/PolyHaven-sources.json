@@ -1,0 +1,92 @@
+[
+  {
+    "md5": "d3d6194b814cbda8a17dc5ebe407a41e",
+    "asset": "castle_brick_01",
+    "source": "https://polyhaven.com/a/castle_brick_01",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/castle_brick_01/castle_brick_01_diff_1k.jpg",
+    "kind": "diffuse",
+    "path": "Assets/DuskYard/Textures/PolyHaven/castle_brick_01_diffuse.jpg"
+  },
+  {
+    "md5": "6e187b440caae18cd2edf5925edf6b7b",
+    "asset": "castle_brick_01",
+    "source": "https://polyhaven.com/a/castle_brick_01",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/castle_brick_01/castle_brick_01_nor_gl_1k.jpg",
+    "kind": "normal",
+    "path": "Assets/DuskYard/Textures/PolyHaven/castle_brick_01_normal.jpg"
+  },
+  {
+    "md5": "bdba186503e5a9314f2fb60edc59e513",
+    "asset": "castle_brick_01",
+    "source": "https://polyhaven.com/a/castle_brick_01",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/castle_brick_01/castle_brick_01_arm_1k.jpg",
+    "kind": "arm",
+    "path": "Assets/DuskYard/Textures/PolyHaven/castle_brick_01_arm.jpg"
+  },
+  {
+    "md5": "59e545f5aefa797ae8bf69fcee7c97c7",
+    "asset": "cobblestone_floor_02",
+    "source": "https://polyhaven.com/a/cobblestone_floor_02",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_02/cobblestone_floor_02_diff_1k.jpg",
+    "kind": "diffuse",
+    "path": "Assets/DuskYard/Textures/PolyHaven/cobblestone_floor_02_diffuse.jpg"
+  },
+  {
+    "md5": "f77017e6de48e5e9d98a7bc08284126d",
+    "asset": "cobblestone_floor_02",
+    "source": "https://polyhaven.com/a/cobblestone_floor_02",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_02/cobblestone_floor_02_nor_gl_1k.jpg",
+    "kind": "normal",
+    "path": "Assets/DuskYard/Textures/PolyHaven/cobblestone_floor_02_normal.jpg"
+  },
+  {
+    "md5": "4ec414869058afd2fa33634ea23fa87a",
+    "asset": "cobblestone_floor_02",
+    "source": "https://polyhaven.com/a/cobblestone_floor_02",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_02/cobblestone_floor_02_arm_1k.jpg",
+    "kind": "arm",
+    "path": "Assets/DuskYard/Textures/PolyHaven/cobblestone_floor_02_arm.jpg"
+  },
+  {
+    "md5": "e9e25ac7abcc482f73214fda23e2de25",
+    "asset": "oak_wood_planks",
+    "source": "https://polyhaven.com/a/oak_wood_planks",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_wood_planks/oak_wood_planks_diff_1k.jpg",
+    "kind": "diffuse",
+    "path": "Assets/DuskYard/Textures/PolyHaven/oak_wood_planks_diffuse.jpg"
+  },
+  {
+    "md5": "6a71c23551887b77b29623bb871aefbf",
+    "asset": "oak_wood_planks",
+    "source": "https://polyhaven.com/a/oak_wood_planks",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_wood_planks/oak_wood_planks_nor_gl_1k.jpg",
+    "kind": "normal",
+    "path": "Assets/DuskYard/Textures/PolyHaven/oak_wood_planks_normal.jpg"
+  },
+  {
+    "md5": "acda23b587f7485d8c9c1d2c035e421f",
+    "asset": "oak_wood_planks",
+    "source": "https://polyhaven.com/a/oak_wood_planks",
+    "license": "CC0-1.0",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_wood_planks/oak_wood_planks_arm_1k.jpg",
+    "kind": "arm",
+    "path": "Assets/DuskYard/Textures/PolyHaven/oak_wood_planks_arm.jpg"
+  },
+  {
+    "md5": "cb1f0fbae91740c0379ec1a5d646df74",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/qwantani_dusk_1_puresky_1k.hdr",
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/qwantani_dusk_1_puresky",
+    "asset": "qwantani_dusk_1_puresky",
+    "path": "Assets/DuskYard/Textures/PolyHaven/qwantani_dusk_1_puresky.hdr",
+    "kind": "hdri"
+  }
+]

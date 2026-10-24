@@ -7,7 +7,7 @@ internal static class DemoInput {
  public static bool GetKeyDown(KeyCode key) {
 #if ENABLE_INPUT_SYSTEM
   var k=Keyboard.current;if(k==null)return false;
-  switch(key){case KeyCode.Escape:return k.escapeKey.wasPressedThisFrame;case KeyCode.Space:return k.spaceKey.wasPressedThisFrame;case KeyCode.F1:return k.f1Key.wasPressedThisFrame;case KeyCode.F2:return k.f2Key.wasPressedThisFrame;case KeyCode.F3:return k.f3Key.wasPressedThisFrame;default:return false;}
+  switch(key){case KeyCode.Escape:return k.escapeKey.wasPressedThisFrame;case KeyCode.Space:return k.spaceKey.wasPressedThisFrame;case KeyCode.F1:return k.f1Key.wasPressedThisFrame;case KeyCode.F2:return k.f2Key.wasPressedThisFrame;case KeyCode.F3:return k.f3Key.wasPressedThisFrame;case KeyCode.F4:return k.f4Key.wasPressedThisFrame;default:return false;}
 #else
   return Input.GetKeyDown(key);
 #endif

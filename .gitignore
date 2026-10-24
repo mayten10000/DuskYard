@@ -9,3 +9,9 @@
 *.sln
 *.user
 *.log
+*.slnx
+.vscode/
+Deliverables/
+Documentation/History/
+Documentation/TemplateArchive/
+Documentation/EditorChecks/
