@@ -8,3 +8,4 @@
 *.asset text eol=lf
 *.unity text eol=lf
 *.prefab text eol=lf
+**/LightingData.asset binary
