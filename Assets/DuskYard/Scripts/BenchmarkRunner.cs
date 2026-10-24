@@ -26,6 +26,7 @@ namespace DuskYard
             public string note = "Standalone wall-clock frame times. 32768-frame bounded sample. GPU/driver/Editor costs are not interchangeable.";
             public Result[] results;
             public int runtimeErrors, runtimeWarnings, distantAttacks, distantHits;
+            public int comboStepsStarted, comboStepsHit;
             public int lightProbeCount, movingProbeSamples;
             public bool movingProbeValuesFinite = true;
             public float maximumAdjacentProbeLuminanceStep;
@@ -37,7 +38,8 @@ namespace DuskYard
         int phase = -1, frames, errors, warnings, hitStart, attackStart, objectsStart, gcStart, stateBits;
         long memStart, memMin, memMax, gcBytes;
         float elapsed, measured, duration, memoryTimer, nextStrike;
-        bool automatic, preview, measuring, screenshot, coldScreenshot, probeReset, distantReset;
+        bool automatic, preview, showcase, measuring, screenshot, coldScreenshot, probeReset, distantReset;
+        readonly bool[] comboCaptures = new bool[9];
         int distantAttackStart, distantHitStart;
         CharacterController controller;
         readonly Vector3[] probeDirections = { Vector3.up };
@@ -57,6 +59,7 @@ namespace DuskYard
             {
                 if (args[i] == "-benchmark") automatic = true;
                 if (args[i] == "-preview") { automatic = true; preview = true; }
+                if (args[i] == "-showcase") { automatic = true; preview = true; showcase = true; }
                 if (args[i] == "-output" && i + 1 < args.Length) output = args[++i];
             }
             gc = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "GC Allocated In Frame", 1);
@@ -114,7 +117,21 @@ namespace DuskYard
                 ScreenCapture.CaptureScreenshot(Path.Combine(output, Modes[phase] + ".png"));
                 screenshot = true;
             }
-            if (preview) { if (elapsed >= 7) Application.Quit(0); return; }
+            if (preview)
+            {
+                float progress=demo.AttackProgress;
+                for(int pose=0;pose<3;pose++)
+                {
+                    int index=demo.ComboStep*3+pose;
+                    float threshold=pose==0?.18f:pose==1?.40f:.70f;
+                    if(!comboCaptures[index]&&progress>=threshold&&progress<threshold+.12f)
+                    {
+                        Directory.CreateDirectory(output);
+                        ScreenCapture.CaptureScreenshot(Path.Combine(output,"Combo-"+(demo.ComboStep+1)+"-"+pose+".png"));comboCaptures[index]=true;
+                    }
+                }
+                if (elapsed >= (showcase?30:9)) Application.Quit(0); return;
+            }
             if (!measuring && elapsed >= warmup) BeginMeasurement();
             if (measuring) { Sample(); if (measured >= duration) FinishPhase(); }
         }
@@ -171,8 +188,9 @@ namespace DuskYard
             if (phase >= 3)
             {
                 report.runtimeErrors = errors; report.runtimeWarnings = warnings;
+                report.comboStepsStarted=demo.ComboStepsStarted;report.comboStepsHit=demo.ComboStepsHit;
                 Directory.CreateDirectory(output); File.WriteAllText(Path.Combine(output, "benchmark.json"), JsonUtility.ToJson(report, true));
-                bool good = errors == 0 && results[1].hits > 0 && results[2].hits > 0 && report.distantAttacks > 0 && report.distantHits == 0 && report.movingProbeValuesFinite && report.lightProbeCount > 0;
+                bool good = errors == 0 && results[1].hits > 0 && results[2].hits > 0 && report.comboStepsHit==7 && report.distantAttacks > 0 && report.distantHits == 0 && report.movingProbeValuesFinite && report.lightProbeCount > 0;
                 Debug.Log("BENCHMARK_COMPLETE " + output);
                 Application.Quit(good ? 0 : 2);
                 return;

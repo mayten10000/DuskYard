@@ -1,0 +1,5 @@
+Unity 6000.3.5f1
+Fresh reload preflight passed.
+Missing managed-type warning after cleanup: absent.
+Runtime code unchanged between full benchmark and final build; only obsolete PathTracing resource reference removed.
+Final -showcase run completed normally; nine combo poses and warm/cold screenshots saved; no Error/Exception log entries.

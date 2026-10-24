@@ -278,6 +278,8 @@ public static class DuskYardFinalize
     {
         EditorSceneManager.OpenScene(ScenePath);
         var failures = new System.Collections.Generic.List<string>();
+        var globalSettings=AssetDatabase.LoadAssetAtPath<RenderPipelineGlobalSettings>(Root+"HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset");
+        if(globalSettings==null||UnityEditor.SerializationUtility.HasManagedReferencesWithMissingTypes(globalSettings))failures.Add("HDRP global settings contain missing managed types");
         foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects()) foreach (var t in root.GetComponentsInChildren<Transform>(true))
             if (GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject) > 0) failures.Add("Missing script: " + t.name);
         foreach (var renderer in UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None)) foreach (var material in renderer.sharedMaterials)
@@ -306,7 +308,7 @@ public static class DuskYardFinalize
     {
         EditorSceneManager.OpenScene(ScenePath);
         var demo = UnityEngine.Object.FindAnyObjectByType<CombatDemo>();
-        demo.blade.localRotation = Quaternion.Euler(-5, -55, -8);
+        demo.blade.localRotation = CombatDemo.GuardRotation;
         var profile = AssetDatabase.LoadAssetAtPath<VolumeProfile>(Root + "Settings/DuskVolume.asset");
         if (profile.TryGet<Exposure>(out var exposure)) { exposure.fixedExposure.Override(5); EditorUtility.SetDirty(exposure); }
         var bounce = GameObject.Find("Hero sky bounce").GetComponent<Light>(); bounce.intensity = 160; EditorUtility.SetDirty(bounce);
