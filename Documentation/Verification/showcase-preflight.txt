@@ -1,5 +1,6 @@
-Unity 6000.3.5f1
-Fresh reload preflight passed.
-Missing managed-type warning after cleanup: absent.
-Runtime code unchanged between full benchmark and final build; only obsolete PathTracing resource reference removed.
-Final -showcase run completed normally; nine combo poses and warm/cold screenshots saved; no Error/Exception log entries.
+Unity6000.3.5f1/HDRP17.3.0
+Fresh validation:0 missing component/material/shader/bake/managed-reference errors.
+All scene renderers validated, including inactive.
+Five VFX materials: Transparent, ZWrite0, queue3000.
+Final runtime benchmark and memory audit completed; JSON/CSV/snapshot comparison retained.
+Showcase:26/26 contacts, all3 combo steps; completed normally.

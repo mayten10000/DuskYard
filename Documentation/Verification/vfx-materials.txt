@@ -1,0 +1,6 @@
+HDRP transparent VFX material validation
+Ember warm: SurfaceType=1, ZWrite=0, Queue=3000
+Ember cold: SurfaceType=1, ZWrite=0, Queue=3000
+Blade motion warm: SurfaceType=1, ZWrite=0, Queue=3000
+Blade motion cold: SurfaceType=1, ZWrite=0, Queue=3000
+Brazier small flame: SurfaceType=1, ZWrite=0, Queue=3000

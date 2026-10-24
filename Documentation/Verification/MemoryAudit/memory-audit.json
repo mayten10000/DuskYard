@@ -1,0 +1,1052 @@
+{
+    "unity": "6000.3.5f1",
+    "method": "15s warmup, settle, GC, native/managed snapshot; 180s attacks; settle, GC, snapshot. Snapshot pauses excluded from the separate FPS benchmark.",
+    "before": {
+        "allocated": 140455653,
+        "reserved": 283312128,
+        "managed": 6094848,
+        "gpu": 590786149,
+        "nativeObjects": 3865,
+        "gameObjects": 346,
+        "types": [
+            {
+                "type": "DuskYard.BenchmarkRunner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.CombatDemo",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.GuardGait",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.GuardSwordPose",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.MemoryAuditRunner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.BoxCollider",
+                "count": 87,
+                "bytes": 20184
+            },
+            {
+                "type": "UnityEngine.Camera",
+                "count": 1,
+                "bytes": 4416
+            },
+            {
+                "type": "UnityEngine.CharacterController",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "type": "UnityEngine.ComputeShader",
+                "count": 118,
+                "bytes": 9636994
+            },
+            {
+                "type": "UnityEngine.Cubemap",
+                "count": 7,
+                "bytes": 3150768
+            },
+            {
+                "type": "UnityEngine.CubemapArray",
+                "count": 3,
+                "bytes": 8390400
+            },
+            {
+                "type": "UnityEngine.GameObject",
+                "count": 346,
+                "bytes": 61632
+            },
+            {
+                "type": "UnityEngine.InputSystem.InputActionAsset",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.InputSystem.InputSettings",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.InputSystem.RemoteInputPlayerConnection",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Light",
+                "count": 8,
+                "bytes": 8896
+            },
+            {
+                "type": "UnityEngine.LightProbeGroup",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "type": "UnityEngine.LightProbes",
+                "count": 1,
+                "bytes": 67604
+            },
+            {
+                "type": "UnityEngine.LightingSettings",
+                "count": 2,
+                "bytes": 160
+            },
+            {
+                "type": "UnityEngine.LightmapSettings",
+                "count": 1,
+                "bytes": 536
+            },
+            {
+                "type": "UnityEngine.Material",
+                "count": 110,
+                "bytes": 633383
+            },
+            {
+                "type": "UnityEngine.Mesh",
+                "count": 101,
+                "bytes": 2479236
+            },
+            {
+                "type": "UnityEngine.MeshFilter",
+                "count": 306,
+                "bytes": 19584
+            },
+            {
+                "type": "UnityEngine.MeshRenderer",
+                "count": 306,
+                "bytes": 177480
+            },
+            {
+                "type": "UnityEngine.Networking.PlayerConnection.PlayerConnection",
+                "count": 1,
+                "bytes": 1208
+            },
+            {
+                "type": "UnityEngine.Object",
+                "count": 20,
+                "bytes": 1567559
+            },
+            {
+                "type": "UnityEngine.ParticleSystem",
+                "count": 3,
+                "bytes": 40740
+            },
+            {
+                "type": "UnityEngine.ParticleSystemRenderer",
+                "count": 3,
+                "bytes": 6468
+            },
+            {
+                "type": "UnityEngine.PreloadData",
+                "count": 2,
+                "bytes": 476
+            },
+            {
+                "type": "UnityEngine.QualitySettings",
+                "count": 1,
+                "bytes": 384
+            },
+            {
+                "type": "UnityEngine.ReflectionProbe",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "type": "UnityEngine.RenderSettings",
+                "count": 1,
+                "bytes": 448
+            },
+            {
+                "type": "UnityEngine.RenderTexture",
+                "count": 74,
+                "bytes": 461716810
+            },
+            {
+                "type": "UnityEngine.Rendering.DebugUpdater",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.GraphicsSettings",
+                "count": 1,
+                "bytes": 524
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Bloom",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ChannelMixer",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ChromaticAberration",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.CloudLayer",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ColorAdjustments",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ColorCurves",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Compositor.AlphaInjection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Compositor.ChromaKeying",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ComputeMaterialLibrary",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ContactShadows",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DepthOfField",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DiffusionProfileList",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DiffusionProfileSettings",
+                "count": 3,
+                "bytes": 1008
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ExponentialFog",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Exposure",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.FilmGrain",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Fog",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.GlobalIllumination",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.GradientSky",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalCameraData",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalLightData",
+                "count": 8,
+                "bytes": 2688
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalReflectionData",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRISky",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRenderPipelineGlobalSettings",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDShadowSettings",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HighQualityLineRenderingVolumeComponent",
+                "count": 5,
+                "bytes": 1720
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.IndirectLightingController",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LensDistortion",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LiftGammaGain",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LightCluster",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.MicroShadowing",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.MotionBlur",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PaniniProjection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PathTracing",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PhysicallyBasedSky",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.RayTracingSettings",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.RecursiveRendering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceAmbientOcclusion",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceLensFlare",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceReflection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceRefraction",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ShadowsMidtonesHighlights",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.SplitToning",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.StaticLightingSky",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.SubSurfaceScattering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Tonemapping",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Vignette",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VisualEnvironment",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricClouds",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricFog",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricLightingController",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.WaterRendering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.WhiteBalance",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.ProbeVolumesOptions",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.RenderGraphModule.DebugMessageHandler",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.Volume",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.VolumeProfile",
+                "count": 2,
+                "bytes": 672
+            },
+            {
+                "type": "UnityEngine.Shader",
+                "count": 93,
+                "bytes": 17574283
+            },
+            {
+                "type": "UnityEngine.TextAsset",
+                "count": 1489,
+                "bytes": 788464
+            },
+            {
+                "type": "UnityEngine.Texture2D",
+                "count": 141,
+                "bytes": 20041269
+            },
+            {
+                "type": "UnityEngine.Texture2DArray",
+                "count": 8,
+                "bytes": 603279
+            },
+            {
+                "type": "UnityEngine.Texture3D",
+                "count": 9,
+                "bytes": 12653936
+            },
+            {
+                "type": "UnityEngine.TrailRenderer",
+                "count": 2,
+                "bytes": 2488
+            },
+            {
+                "type": "UnityEngine.Transform",
+                "count": 346,
+                "bytes": 107520
+            },
+            {
+                "type": "UnityEngine.VFX.VFXRuntimeResources",
+                "count": 1,
+                "bytes": 336
+            }
+        ]
+    },
+    "after": {
+        "allocated": 141885280,
+        "reserved": 286461952,
+        "managed": 6176768,
+        "gpu": 590786149,
+        "nativeObjects": 3865,
+        "gameObjects": 346,
+        "types": [
+            {
+                "type": "DuskYard.BenchmarkRunner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.CombatDemo",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.GuardGait",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.GuardSwordPose",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "DuskYard.MemoryAuditRunner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSpawner",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.BoxCollider",
+                "count": 87,
+                "bytes": 20184
+            },
+            {
+                "type": "UnityEngine.Camera",
+                "count": 1,
+                "bytes": 4416
+            },
+            {
+                "type": "UnityEngine.CharacterController",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "type": "UnityEngine.ComputeShader",
+                "count": 118,
+                "bytes": 9636994
+            },
+            {
+                "type": "UnityEngine.Cubemap",
+                "count": 7,
+                "bytes": 3150768
+            },
+            {
+                "type": "UnityEngine.CubemapArray",
+                "count": 3,
+                "bytes": 8390400
+            },
+            {
+                "type": "UnityEngine.GameObject",
+                "count": 346,
+                "bytes": 61632
+            },
+            {
+                "type": "UnityEngine.InputSystem.InputActionAsset",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.InputSystem.InputSettings",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.InputSystem.RemoteInputPlayerConnection",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Light",
+                "count": 8,
+                "bytes": 8896
+            },
+            {
+                "type": "UnityEngine.LightProbeGroup",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "type": "UnityEngine.LightProbes",
+                "count": 1,
+                "bytes": 67604
+            },
+            {
+                "type": "UnityEngine.LightingSettings",
+                "count": 2,
+                "bytes": 160
+            },
+            {
+                "type": "UnityEngine.LightmapSettings",
+                "count": 1,
+                "bytes": 536
+            },
+            {
+                "type": "UnityEngine.Material",
+                "count": 110,
+                "bytes": 633383
+            },
+            {
+                "type": "UnityEngine.Mesh",
+                "count": 101,
+                "bytes": 2479236
+            },
+            {
+                "type": "UnityEngine.MeshFilter",
+                "count": 306,
+                "bytes": 19584
+            },
+            {
+                "type": "UnityEngine.MeshRenderer",
+                "count": 306,
+                "bytes": 177480
+            },
+            {
+                "type": "UnityEngine.Networking.PlayerConnection.PlayerConnection",
+                "count": 1,
+                "bytes": 1208
+            },
+            {
+                "type": "UnityEngine.Object",
+                "count": 20,
+                "bytes": 1567559
+            },
+            {
+                "type": "UnityEngine.ParticleSystem",
+                "count": 3,
+                "bytes": 44580
+            },
+            {
+                "type": "UnityEngine.ParticleSystemRenderer",
+                "count": 3,
+                "bytes": 6468
+            },
+            {
+                "type": "UnityEngine.PreloadData",
+                "count": 2,
+                "bytes": 476
+            },
+            {
+                "type": "UnityEngine.QualitySettings",
+                "count": 1,
+                "bytes": 384
+            },
+            {
+                "type": "UnityEngine.ReflectionProbe",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "type": "UnityEngine.RenderSettings",
+                "count": 1,
+                "bytes": 448
+            },
+            {
+                "type": "UnityEngine.RenderTexture",
+                "count": 74,
+                "bytes": 461716810
+            },
+            {
+                "type": "UnityEngine.Rendering.DebugUpdater",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.GraphicsSettings",
+                "count": 1,
+                "bytes": 524
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Bloom",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ChannelMixer",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ChromaticAberration",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.CloudLayer",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ColorAdjustments",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ColorCurves",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Compositor.AlphaInjection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Compositor.ChromaKeying",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ComputeMaterialLibrary",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ContactShadows",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DepthOfField",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DiffusionProfileList",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.DiffusionProfileSettings",
+                "count": 3,
+                "bytes": 1008
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ExponentialFog",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Exposure",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.FilmGrain",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Fog",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.GlobalIllumination",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.GradientSky",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalCameraData",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalLightData",
+                "count": 8,
+                "bytes": 2688
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDAdditionalReflectionData",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRISky",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDRenderPipelineGlobalSettings",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HDShadowSettings",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.HighQualityLineRenderingVolumeComponent",
+                "count": 5,
+                "bytes": 1720
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.IndirectLightingController",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LensDistortion",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LiftGammaGain",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.LightCluster",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.MicroShadowing",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.MotionBlur",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PaniniProjection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PathTracing",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.PhysicallyBasedSky",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.RayTracingSettings",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.RecursiveRendering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceAmbientOcclusion",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceLensFlare",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceReflection",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ScreenSpaceRefraction",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.ShadowsMidtonesHighlights",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.SplitToning",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.StaticLightingSky",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.SubSurfaceScattering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Tonemapping",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.Vignette",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VisualEnvironment",
+                "count": 6,
+                "bytes": 2016
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricClouds",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricFog",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.VolumetricLightingController",
+                "count": 4,
+                "bytes": 1344
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.WaterRendering",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.HighDefinition.WhiteBalance",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.ProbeVolumesOptions",
+                "count": 5,
+                "bytes": 1680
+            },
+            {
+                "type": "UnityEngine.Rendering.RenderGraphModule.DebugMessageHandler",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.Volume",
+                "count": 1,
+                "bytes": 336
+            },
+            {
+                "type": "UnityEngine.Rendering.VolumeProfile",
+                "count": 2,
+                "bytes": 672
+            },
+            {
+                "type": "UnityEngine.Shader",
+                "count": 93,
+                "bytes": 17574283
+            },
+            {
+                "type": "UnityEngine.TextAsset",
+                "count": 1489,
+                "bytes": 788464
+            },
+            {
+                "type": "UnityEngine.Texture2D",
+                "count": 141,
+                "bytes": 20041269
+            },
+            {
+                "type": "UnityEngine.Texture2DArray",
+                "count": 8,
+                "bytes": 603279
+            },
+            {
+                "type": "UnityEngine.Texture3D",
+                "count": 9,
+                "bytes": 12653936
+            },
+            {
+                "type": "UnityEngine.TrailRenderer",
+                "count": 2,
+                "bytes": 2328
+            },
+            {
+                "type": "UnityEngine.Transform",
+                "count": 346,
+                "bytes": 107520
+            },
+            {
+                "type": "UnityEngine.VFX.VFXRuntimeResources",
+                "count": 1,
+                "bytes": 336
+            }
+        ]
+    },
+    "snapshotsSucceeded": 2,
+    "errors": 0,
+    "attacks": 235,
+    "hits": 235,
+    "peakContactParticles": 96,
+    "comboHitMask": 7,
+    "stressSeconds": 180.0064239501953,
+    "limitation": "Native object inventories and snapshots support a bounded test; they do not prove absence of every engine/driver allocation leak. The auditor retains its own reports and samples."
+}

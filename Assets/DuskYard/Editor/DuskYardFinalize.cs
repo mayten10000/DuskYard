@@ -282,7 +282,7 @@ public static class DuskYardFinalize
         if(globalSettings==null||UnityEditor.SerializationUtility.HasManagedReferencesWithMissingTypes(globalSettings))failures.Add("HDRP global settings contain missing managed types");
         foreach (var root in SceneManager.GetActiveScene().GetRootGameObjects()) foreach (var t in root.GetComponentsInChildren<Transform>(true))
             if (GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject) > 0) failures.Add("Missing script: " + t.name);
-        foreach (var renderer in UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsSortMode.None)) foreach (var material in renderer.sharedMaterials)
+        foreach (var sceneRoot in SceneManager.GetActiveScene().GetRootGameObjects()) foreach(var renderer in sceneRoot.GetComponentsInChildren<Renderer>(true)) foreach (var material in renderer.sharedMaterials)
         {
             if (material == null || material.shader == null) failures.Add("Missing material/shader: " + renderer.name);
             else if (ShaderUtil.ShaderHasError(material.shader))
@@ -295,6 +295,11 @@ public static class DuskYardFinalize
         if (volume == null || volume.components.Count < 6 || volume.components.Exists(component => component == null)) failures.Add("Global Volume components were not persisted");
         var demo = UnityEngine.Object.FindAnyObjectByType<CombatDemo>();
         if (demo == null || demo.recoveryMaterial == null || demo.restoredMaterial == null || demo.warmEffect == null || demo.coldEffect == null || demo.warmTrail == null || demo.coldTrail == null) failures.Add("Combat material dependency");
+        foreach(string name in new[]{"Ember warm","Ember cold","Blade motion warm","Blade motion cold","Brazier small flame"})
+        {
+            var effect=AssetDatabase.LoadAssetAtPath<Material>(Root+"Materials/"+name+".mat");
+            if(effect==null||effect.GetFloat("_SurfaceType")!=1||effect.GetFloat("_ZWrite")!=0||effect.renderQueue<3000)failures.Add("VFX transparent material state: "+name);
+        }
         if (LightmapSettings.lightmaps.Length == 0) failures.Add("No baked lightmaps");
         if (LightmapSettings.lightProbes == null || LightmapSettings.lightProbes.count < 1) failures.Add("No baked Light Probes");
         var probe = UnityEngine.Object.FindAnyObjectByType<HDAdditionalReflectionData>();

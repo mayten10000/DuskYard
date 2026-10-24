@@ -32,7 +32,7 @@ namespace DuskYard
         readonly RaycastHit[] sweptHits = new RaycastHit[8];
         CharacterController controller;
         Quaternion targetRest;
-        Vector3 previousTip;
+        Vector3 previousTip, guardPosition, attackStartPosition, targetRestPosition;
         float yaw, pitch = 18, swing = -1, reaction = -1, flash, lastAttackEnd = -10;
         bool struck, cold, queued;
         Quaternion attackStart;
@@ -42,6 +42,8 @@ namespace DuskYard
         {
             controller = hero.GetComponent<CharacterController>();
             targetRest = target.localRotation;
+            targetRestPosition = target.localPosition;
+            guardPosition = blade.localPosition;
             blade.localRotation = GuardRotation;
             QualitySettings.vSyncCount = 0;
             Application.targetFrameRate = -1;
@@ -87,13 +89,13 @@ namespace DuskYard
                 previousTip = Tip();
                 if (swing >= AttackDuration)
                 {
-                    swing = -1; lastAttackEnd = Time.time; trail.emitting = false; blade.localRotation = GuardRotation;
+                    swing = -1; lastAttackEnd = Time.time; trail.emitting = false; blade.localRotation = GuardRotation; blade.localPosition = guardPosition;
                     if (queued) { queued = false; BeginAttack(); }
                 }
             }
             UpdateTarget(dt);
             flash = Mathf.Max(0, flash - dt);
-            impactLight.intensity = 350 * Mathf.Clamp01(flash / .065f);
+            impactLight.intensity = 160 * Mathf.Clamp01(flash / .065f);
             PeakParticles = Mathf.Max(PeakParticles, sparks.particleCount);
         }
 
@@ -111,6 +113,7 @@ namespace DuskYard
             ComboStep = Time.time - lastAttackEnd > 1.05f ? 0 : (ComboStep + 1) % 3;
             ComboStepsStarted |= 1 << ComboStep;
             attackStart = blade.localRotation;
+            attackStartPosition = blade.localPosition;
             swing = 0;
             struck = false;
             trail.Clear();
@@ -127,15 +130,28 @@ namespace DuskYard
         }
         void ApplyBladePose(float time)
         {
-            if (time < Windup) blade.localRotation = Quaternion.Slerp(attackStart, WindRotation(), Mathf.SmoothStep(0, 1, time / Windup));
+            Vector3 wind = guardPosition + (ComboStep == 0 ? new Vector3(.07f,.12f,-.08f) : ComboStep == 1 ? new Vector3(.06f,-.10f,-.04f) : new Vector3(.02f,.29f,0));
+            Vector3 follow = guardPosition + (ComboStep == 0 ? new Vector3(-.08f,-.09f,.04f) : ComboStep == 1 ? new Vector3(-.08f,.12f,.03f) : new Vector3(0,-.12f,.06f));
+            if (time < Windup)
+            {
+                float t=Mathf.SmoothStep(0,1,time/Windup);
+                blade.localRotation = Quaternion.Slerp(attackStart, WindRotation(), t);
+                blade.localPosition = Vector3.Lerp(attackStartPosition,wind,t);
+            }
             else if (time < ActiveEnd)
             {
-                float t = (time - Windup) / (ActiveEnd - Windup);
+                float t = Mathf.SmoothStep(0,1,(time - Windup) / (ActiveEnd - Windup));
                 // Pass every cut through the same real striking plane before follow-through.
                 Quaternion contact = Quaternion.Euler(-2, 0, ComboStep == 0 ? -28 : ComboStep == 1 ? 28 : 0);
-                blade.localRotation = t < .5f ? Quaternion.Slerp(WindRotation(), contact, Mathf.SmoothStep(0, 1, t * 2)) : Quaternion.Slerp(contact, FollowRotation(), Mathf.SmoothStep(0, 1, t * 2 - 1));
+                blade.localRotation = t < .5f ? Quaternion.Slerp(WindRotation(), contact, t * 2) : Quaternion.Slerp(contact, FollowRotation(), t * 2 - 1);
+                blade.localPosition = t < .5f ? Vector3.Lerp(wind,guardPosition,t*2) : Vector3.Lerp(guardPosition,follow,t*2-1);
             }
-            else blade.localRotation = Quaternion.Slerp(FollowRotation(), GuardRotation, Mathf.SmoothStep(0, 1, (time - ActiveEnd) / (AttackDuration - ActiveEnd)));
+            else
+            {
+                float t=Mathf.SmoothStep(0,1,(time-ActiveEnd)/(AttackDuration-ActiveEnd));
+                blade.localRotation = Quaternion.Slerp(FollowRotation(), GuardRotation,t);
+                blade.localPosition = Vector3.Lerp(follow,guardPosition,t);
+            }
         }
         void SweepBlade(float from, float to)
         {
@@ -191,9 +207,16 @@ namespace DuskYard
             if (reaction < .10f) { TargetState = "HIT"; targetRenderer.sharedMaterial = hitMaterial; }
             else if (reaction < .55f) { TargetState = "RECOVERING"; targetRenderer.sharedMaterial = recoveryMaterial != null ? recoveryMaterial : readyMaterial; }
             else if (reaction < .80f) { TargetState = "RESTORED"; targetRenderer.sharedMaterial = restoredMaterial != null ? restoredMaterial : readyMaterial; }
-            else { TargetState = "READY"; targetRenderer.sharedMaterial = readyMaterial; reaction = -1; }
-            float strength = Mathf.Clamp01(1 - reaction / .55f);
-            target.localRotation = targetRest * Quaternion.Euler(Mathf.Sin(reaction * 26) * strength * 6, 0, 0);
+            else
+            {
+                TargetState = "READY"; targetRenderer.sharedMaterial = readyMaterial; reaction = -1;
+                target.localRotation = targetRest; target.localPosition = targetRestPosition;
+                return;
+            }
+            float strength = Mathf.Clamp01(1 - reaction / .80f);
+            float recoil = Mathf.Sin(reaction * 24) * Mathf.Exp(-reaction * 5) * strength;
+            target.localRotation = targetRest * Quaternion.Euler(recoil * (ComboStep == 2 ? 14 : 9), 0, recoil * (ComboStep == 0 ? -7 : ComboStep == 1 ? 7 : 0));
+            target.localPosition = targetRestPosition + Vector3.forward * (recoil * .045f);
         }
         public void SetMode(string value)
         {

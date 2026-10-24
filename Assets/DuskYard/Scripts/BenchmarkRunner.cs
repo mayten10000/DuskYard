@@ -9,6 +9,11 @@ namespace DuskYard
 {
     public sealed class BenchmarkRunner : MonoBehaviour
     {
+        [Serializable] class PreviewReport
+        {
+            public Vector3 hero, target, targetEuler, blade, tip;
+            public int attacks,hits,comboHits;
+        }
         [Serializable] public class Result
         {
             public string mode;
@@ -27,6 +32,8 @@ namespace DuskYard
             public Result[] results;
             public int runtimeErrors, runtimeWarnings, distantAttacks, distantHits;
             public int comboStepsStarted, comboStepsHit;
+            public int readyPoseChecks;
+            public float maximumReadyPositionError, maximumReadyRotationError;
             public int lightProbeCount, movingProbeSamples;
             public bool movingProbeValuesFinite = true;
             public float maximumAdjacentProbeLuminanceStep;
@@ -47,20 +54,29 @@ namespace DuskYard
         float previousLuminance;
         string output;
         Report report;
+        Vector3 targetOrigin;
+        Quaternion targetRotation;
         static readonly string[] Modes = { "Baseline", "Gameplay", "Stress" };
 
         void Start()
         {
             Application.runInBackground = true;
             controller = demo.hero.GetComponent<CharacterController>();
+            targetOrigin=demo.target.position;targetRotation=demo.target.rotation;
             output = Path.Combine(Application.persistentDataPath, "Measurements");
             string[] args = Environment.GetCommandLineArgs();
+            bool memoryAudit=false;
             for (int i = 0; i < args.Length; i++)
             {
                 if (args[i] == "-benchmark") automatic = true;
+                if (args[i] == "-memory-audit") memoryAudit = true;
                 if (args[i] == "-preview") { automatic = true; preview = true; }
                 if (args[i] == "-showcase") { automatic = true; preview = true; showcase = true; }
                 if (args[i] == "-output" && i + 1 < args.Length) output = args[++i];
+            }
+            if(memoryAudit)
+            {
+                var audit=gameObject.AddComponent<MemoryAuditRunner>();audit.demo=demo;enabled=false;return;
             }
             gc = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "GC Allocated In Frame", 1);
             report = new Report { unity = Application.unityVersion, cpu = SystemInfo.processorType, gpu = SystemInfo.graphicsDeviceName,
@@ -81,6 +97,12 @@ namespace DuskYard
         {
             if (!automatic) { Sample(); return; }
             if (phase < 0 || phase >= 3) return;
+            if(demo.TargetState=="READY")
+            {
+                report.readyPoseChecks++;
+                report.maximumReadyPositionError=Mathf.Max(report.maximumReadyPositionError,Vector3.Distance(targetOrigin,demo.target.position));
+                report.maximumReadyRotationError=Mathf.Max(report.maximumReadyRotationError,Quaternion.Angle(targetRotation,demo.target.rotation));
+            }
             elapsed += measuring ? Time.unscaledDeltaTime : Mathf.Min(.1f, Time.unscaledDeltaTime);
             if (phase == 1 && elapsed >= 1 && !distantReset)
             {
@@ -130,7 +152,13 @@ namespace DuskYard
                         ScreenCapture.CaptureScreenshot(Path.Combine(output,"Combo-"+(demo.ComboStep+1)+"-"+pose+".png"));comboCaptures[index]=true;
                     }
                 }
-                if (elapsed >= (showcase?30:9)) Application.Quit(0); return;
+                if (elapsed >= (showcase?30:9))
+                {
+                    Directory.CreateDirectory(output);
+                    File.WriteAllText(Path.Combine(output,"preview-check.json"),JsonUtility.ToJson(new PreviewReport{hero=demo.hero.position,target=demo.target.position,targetEuler=demo.target.eulerAngles,blade=demo.blade.position,tip=demo.Tip(),attacks=demo.TotalAttacks,hits=demo.TotalHits,comboHits=demo.ComboStepsHit},true));
+                    Application.Quit(0);
+                }
+                return;
             }
             if (!measuring && elapsed >= warmup) BeginMeasurement();
             if (measuring) { Sample(); if (measured >= duration) FinishPhase(); }
@@ -190,7 +218,7 @@ namespace DuskYard
                 report.runtimeErrors = errors; report.runtimeWarnings = warnings;
                 report.comboStepsStarted=demo.ComboStepsStarted;report.comboStepsHit=demo.ComboStepsHit;
                 Directory.CreateDirectory(output); File.WriteAllText(Path.Combine(output, "benchmark.json"), JsonUtility.ToJson(report, true));
-                bool good = errors == 0 && results[1].hits > 0 && results[2].hits > 0 && report.comboStepsHit==7 && report.distantAttacks > 0 && report.distantHits == 0 && report.movingProbeValuesFinite && report.lightProbeCount > 0;
+                bool good = errors == 0 && results[1].hits > 0 && results[2].hits > 0 && report.comboStepsHit==7 && report.readyPoseChecks>0 && report.maximumReadyPositionError<.001f && report.maximumReadyRotationError<.1f && report.distantAttacks > 0 && report.distantHits == 0 && report.movingProbeValuesFinite && report.lightProbeCount > 0;
                 Debug.Log("BENCHMARK_COMPLETE " + output);
                 Application.Quit(good ? 0 : 2);
                 return;
@@ -226,7 +254,7 @@ namespace DuskYard
         void OnDestroy()
         {
             Application.logMessageReceived -= OnLog;
-            gc.Dispose();
+            if(gc.Valid)gc.Dispose();
         }
     }
 }

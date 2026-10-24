@@ -2,4 +2,4 @@ Unity: 6000.3.5f1
 Lightmaps: 3
 Light probes: 75
 Reflection baked: True
-Art pass: rebaked; three lightmap sets verified in build asset list.
+Visual polish rebake completed.

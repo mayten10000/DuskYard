@@ -1,0 +1,10 @@
+PASS: Unity6000.3.5f1/HDRP17.3
+PASS: build/preflight, all scene renderers including inactive
+PASS: 1920x1080/PC/D3D11/VSync0, Gameplay median>=60
+PASS: all3 combo steps hit, distant1 attack/0 hits
+PASS: target READY position/rotation error0
+PASS: runtime errors/warnings0, Gen0 collections0, stable active object count
+PASS:5 VFX materials Transparent/ZWrite0/queue3000
+PASS:2 memory snapshots loaded and compared with built-in Unity reader
+LIMIT: historical active time by6 blocks not recorded
+PENDING: external sharing URL; local delivery chosen by user

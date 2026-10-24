@@ -1,0 +1,2365 @@
+{
+    "before": {
+        "path": "before.snap",
+        "nativeObjects": 3865,
+        "nativeObjectBytes": 539848761,
+        "nativeAllocations": 83708,
+        "nativeAllocationBytes": 142949768,
+        "objectsByType": [
+            {
+                "name": "AudioManager",
+                "count": 1,
+                "bytes": 1289002
+            },
+            {
+                "name": "BoxCollider",
+                "count": 87,
+                "bytes": 20184
+            },
+            {
+                "name": "BuildSettings",
+                "count": 1,
+                "bytes": 539
+            },
+            {
+                "name": "Camera",
+                "count": 1,
+                "bytes": 4416
+            },
+            {
+                "name": "CharacterController",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "name": "ComputeShader",
+                "count": 118,
+                "bytes": 9636994
+            },
+            {
+                "name": "Cubemap",
+                "count": 7,
+                "bytes": 3150768
+            },
+            {
+                "name": "CubemapArray",
+                "count": 3,
+                "bytes": 8390400
+            },
+            {
+                "name": "DelayedCallManager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "GameObject",
+                "count": 346,
+                "bytes": 61632
+            },
+            {
+                "name": "GraphicsSettings",
+                "count": 1,
+                "bytes": 524
+            },
+            {
+                "name": "InputManager",
+                "count": 1,
+                "bytes": 9440
+            },
+            {
+                "name": "Light",
+                "count": 8,
+                "bytes": 8896
+            },
+            {
+                "name": "LightProbeGroup",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "LightProbes",
+                "count": 1,
+                "bytes": 67604
+            },
+            {
+                "name": "LightingSettings",
+                "count": 2,
+                "bytes": 160
+            },
+            {
+                "name": "LightmapSettings",
+                "count": 1,
+                "bytes": 536
+            },
+            {
+                "name": "Material",
+                "count": 110,
+                "bytes": 633383
+            },
+            {
+                "name": "Mesh",
+                "count": 101,
+                "bytes": 2479236
+            },
+            {
+                "name": "MeshFilter",
+                "count": 306,
+                "bytes": 19584
+            },
+            {
+                "name": "MeshRenderer",
+                "count": 306,
+                "bytes": 177480
+            },
+            {
+                "name": "MonoBehaviour",
+                "count": 18,
+                "bytes": 6048
+            },
+            {
+                "name": "MonoManager",
+                "count": 1,
+                "bytes": 112462
+            },
+            {
+                "name": "MonoScript",
+                "count": 1489,
+                "bytes": 788464
+            },
+            {
+                "name": "MultiplayerManager",
+                "count": 1,
+                "bytes": 56
+            },
+            {
+                "name": "NavMeshProjectSettings",
+                "count": 1,
+                "bytes": 1760
+            },
+            {
+                "name": "NavMeshSettings",
+                "count": 1,
+                "bytes": 56
+            },
+            {
+                "name": "OcclusionCullingSettings",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "ParticleSystem",
+                "count": 3,
+                "bytes": 40740
+            },
+            {
+                "name": "ParticleSystemRenderer",
+                "count": 3,
+                "bytes": 6468
+            },
+            {
+                "name": "Physics2DSettings",
+                "count": 1,
+                "bytes": 376
+            },
+            {
+                "name": "PhysicsManager",
+                "count": 1,
+                "bytes": 248
+            },
+            {
+                "name": "PlayerSettings",
+                "count": 1,
+                "bytes": 1461
+            },
+            {
+                "name": "PreloadData",
+                "count": 2,
+                "bytes": 476
+            },
+            {
+                "name": "QualitySettings",
+                "count": 1,
+                "bytes": 384
+            },
+            {
+                "name": "ReflectionProbe",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "name": "RenderSettings",
+                "count": 1,
+                "bytes": 448
+            },
+            {
+                "name": "RenderTexture",
+                "count": 74,
+                "bytes": 461716810
+            },
+            {
+                "name": "ResourceManager",
+                "count": 1,
+                "bytes": 100416
+            },
+            {
+                "name": "RuntimeInitializeOnLoadManager",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "ScriptableObject",
+                "count": 254,
+                "bytes": 86256
+            },
+            {
+                "name": "Shader",
+                "count": 93,
+                "bytes": 17574283
+            },
+            {
+                "name": "ShaderNameRegistry",
+                "count": 1,
+                "bytes": 24837
+            },
+            {
+                "name": "StreamingManager",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "TagManager",
+                "count": 1,
+                "bytes": 1800
+            },
+            {
+                "name": "Texture2D",
+                "count": 141,
+                "bytes": 20041269
+            },
+            {
+                "name": "Texture2DArray",
+                "count": 8,
+                "bytes": 603279
+            },
+            {
+                "name": "Texture3D",
+                "count": 9,
+                "bytes": 12653936
+            },
+            {
+                "name": "TimeManager",
+                "count": 1,
+                "bytes": 1264
+            },
+            {
+                "name": "TrailRenderer",
+                "count": 2,
+                "bytes": 2488
+            },
+            {
+                "name": "Transform",
+                "count": 346,
+                "bytes": 107520
+            },
+            {
+                "name": "UnityConnectSettings",
+                "count": 1,
+                "bytes": 1090
+            },
+            {
+                "name": "VFXManager",
+                "count": 1,
+                "bytes": 22360
+            }
+        ],
+        "allocationsByRoot": [
+            {
+                "name": "Animation / BlendShapeBinding",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation / ScriptPropertyBinding",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation Module / AnimationBindingCache",
+                "count": 3,
+                "bytes": 1016
+            },
+            {
+                "name": "Animation Module / AnimationManager",
+                "count": 1,
+                "bytes": 40
+            },
+            {
+                "name": "Animation Module / AnimationStateNetworkInterface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation Module / BoundPropertyManager",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "Animation Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / AudioSource filters",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / OnAudioFilterRead filters",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "CaptureScreenshot Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Cloth Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "ContentLoadSystem / LoadedContentOverhead",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "File System / FileSystem",
+                "count": 9,
+                "bytes": 1073
+            },
+            {
+                "name": "File System / Managed Archive File System",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "Font Engine / Current File Path",
+                "count": 1,
+                "bytes": 40
+            },
+            {
+                "name": "Font Engine / Font Face Cache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / FontReferences",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Font Engine / FreeType",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / GPOS Marshalling",
+                "count": 5,
+                "bytes": 160
+            },
+            {
+                "name": "Font Engine / GSUB Marshalling",
+                "count": 6,
+                "bytes": 192
+            },
+            {
+                "name": "Font Engine / Layout Tables",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Font Engine / Pair Adjustment Lookup",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / Positioning Tables",
+                "count": 1,
+                "bytes": 128
+            },
+            {
+                "name": "Font Engine / Substitution Tables",
+                "count": 2,
+                "bytes": 136
+            },
+            {
+                "name": "ForceFieldManager / ",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "IMGUI / Text Generator cache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "IMGUI / Text Generators",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "IMGUI Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Identifiers / Identifiers",
+                "count": 6,
+                "bytes": 605
+            },
+            {
+                "name": "Input Module Impl / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Insights Module / InsightsAnalytics",
+                "count": 91,
+                "bytes": 293380
+            },
+            {
+                "name": "Job System / BackgroundJobQueue",
+                "count": 168,
+                "bytes": 3964800
+            },
+            {
+                "name": "Log System / LogMessages",
+                "count": 1,
+                "bytes": 112
+            },
+            {
+                "name": "Managers / AllCameras",
+                "count": 2,
+                "bytes": 40
+            },
+            {
+                "name": "Managers / AssetBundleManager",
+                "count": 1,
+                "bytes": 512
+            },
+            {
+                "name": "Managers / AssetReferenceStorage",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Managers / AsyncReadManager",
+                "count": 9,
+                "bytes": 3718
+            },
+            {
+                "name": "Managers / AsyncReadManagerMetrics",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "Managers / AsyncUploadManager",
+                "count": 229,
+                "bytes": 16813160
+            },
+            {
+                "name": "Managers / BaseObjectManager",
+                "count": 57,
+                "bytes": 419880
+            },
+            {
+                "name": "Managers / BatchDelete",
+                "count": 4,
+                "bytes": 1049408
+            },
+            {
+                "name": "Managers / BurstCompilerService",
+                "count": 10754,
+                "bytes": 2102954
+            },
+            {
+                "name": "Managers / CanvasManager",
+                "count": 1,
+                "bytes": 3392
+            },
+            {
+                "name": "Managers / Cloth Manager",
+                "count": 3,
+                "bytes": 504
+            },
+            {
+                "name": "Managers / ContentLoadSystem",
+                "count": 37,
+                "bytes": 10120
+            },
+            {
+                "name": "Managers / ContentNamespaceManager",
+                "count": 1,
+                "bytes": 48
+            },
+            {
+                "name": "Managers / DSPGraph",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "Managers / ExecutionOrderManager",
+                "count": 2,
+                "bytes": 1912
+            },
+            {
+                "name": "Managers / GUIEventManager",
+                "count": 2,
+                "bytes": 56
+            },
+            {
+                "name": "Managers / IntermediateRendererManager",
+                "count": 4,
+                "bytes": 1664
+            },
+            {
+                "name": "Managers / LODGroupManager",
+                "count": 7,
+                "bytes": 301
+            },
+            {
+                "name": "Managers / LayerTagManager",
+                "count": 29,
+                "bytes": 2080
+            },
+            {
+                "name": "Managers / LazyScriptCache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Managers / ManagedAttributeManager",
+                "count": 5,
+                "bytes": 17032
+            },
+            {
+                "name": "Managers / MeshVertexFormatManager",
+                "count": 17,
+                "bytes": 6552
+            },
+            {
+                "name": "Managers / Mono VM",
+                "count": 4,
+                "bytes": 219672
+            },
+            {
+                "name": "Managers / MonoDomain",
+                "count": 225,
+                "bytes": 27802
+            },
+            {
+                "name": "Managers / ObjectDispatcher",
+                "count": 3,
+                "bytes": 960
+            },
+            {
+                "name": "Managers / PathNameManager",
+                "count": 32,
+                "bytes": 3176
+            },
+            {
+                "name": "Managers / RTTI",
+                "count": 106,
+                "bytes": 33072
+            },
+            {
+                "name": "Managers / RendererUpdateManager",
+                "count": 1,
+                "bytes": 1456
+            },
+            {
+                "name": "Managers / RuntimeSceneManager",
+                "count": 4,
+                "bytes": 392
+            },
+            {
+                "name": "Managers / SerializationBackwardsCompatibility",
+                "count": 75,
+                "bytes": 5360
+            },
+            {
+                "name": "Managers / SharedStrings",
+                "count": 2419,
+                "bytes": 68301
+            },
+            {
+                "name": "Managers / Sorting Group Manager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "Managers / SpriteAtlasManager",
+                "count": 1,
+                "bytes": 112
+            },
+            {
+                "name": "Managers / TextureStreamingManager",
+                "count": 3,
+                "bytes": 1376
+            },
+            {
+                "name": "Managers / TransferFunctionScriptingTraitsCache",
+                "count": 2,
+                "bytes": 144
+            },
+            {
+                "name": "Managers / TypeTreeHashBasedCache",
+                "count": 2,
+                "bytes": 344
+            },
+            {
+                "name": "Managers / VideoManager",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / CanvasBatchRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / DetailInstanceIntermediateRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / DetailMeshIntermediateRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / FixedSize 112",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / FixedSize 56",
+                "count": 3,
+                "bytes": 32848
+            },
+            {
+                "name": "MemoryPools / FixedSize 96",
+                "count": 3,
+                "bytes": 32848
+            },
+            {
+                "name": "MemoryPools / IndirectMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / InstancedMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / InstancedProceduralMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / MeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / ProceduralRenderers",
+                "count": 2,
+                "bytes": 144
+            },
+            {
+                "name": "MemoryPools / QuadTreeBatchRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / QuadTreeRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingGeometryInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingGeometryInstanceRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceListRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMultiGeometryInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingQuadTreeNodeRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RenderBufferEntries",
+                "count": 3,
+                "bytes": 4176
+            },
+            {
+                "name": "MemoryPools / RenderTextureEntries",
+                "count": 3,
+                "bytes": 4176
+            },
+            {
+                "name": "MemoryProfiling / MemoryProfiler",
+                "count": 287,
+                "bytes": 747954
+            },
+            {
+                "name": "MemoryProfiling / MemorySnapshotManager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "Objects / ",
+                "count": 51915,
+                "bytes": 42947592
+            },
+            {
+                "name": "ParticleSystem Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "ParticleSystem Module / ParticleSystemManager",
+                "count": 2,
+                "bytes": 576
+            },
+            {
+                "name": "PersistentManager.Remapper / Remapper",
+                "count": 18,
+                "bytes": 508176
+            },
+            {
+                "name": "Physics / BackendSystem",
+                "count": 4,
+                "bytes": 968
+            },
+            {
+                "name": "Physics / NvCloth",
+                "count": 6,
+                "bytes": 176
+            },
+            {
+                "name": "Physics / PhysX",
+                "count": 369,
+                "bytes": 379596
+            },
+            {
+                "name": "Physics / PhysX Shape Ignore Pairs",
+                "count": 2,
+                "bytes": 544
+            },
+            {
+                "name": "Physics / PhysXContactsBuffer",
+                "count": 1,
+                "bytes": 64
+            },
+            {
+                "name": "Physics / PhysXJointBreakEventsBuffer",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Physics / PhysXScratchBuffer",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "Physics / PhysXTriggerEventsBuffer",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Physics / Physics Manager Statics",
+                "count": 6,
+                "bytes": 2976
+            },
+            {
+                "name": "Physics Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Physics2D / HighLevel",
+                "count": 8,
+                "bytes": 106496
+            },
+            {
+                "name": "Physics2D / HighLevel.Box2Dv2",
+                "count": 10,
+                "bytes": 46344
+            },
+            {
+                "name": "Physics2D / HighLevel.Profiler",
+                "count": 1,
+                "bytes": 360
+            },
+            {
+                "name": "Physics2D / LowLevel",
+                "count": 1,
+                "bytes": 1744
+            },
+            {
+                "name": "Physics2D / LowLevel.Box2Dv3",
+                "count": 153,
+                "bytes": 25992
+            },
+            {
+                "name": "Physics2D / LowLevel.PhysicsComposer",
+                "count": 2,
+                "bytes": 744
+            },
+            {
+                "name": "Physics2D / LowLevel.WorldManager",
+                "count": 15,
+                "bytes": 97048
+            },
+            {
+                "name": "Physics2D / LowLevel.WorldRenderer",
+                "count": 1,
+                "bytes": 1312
+            },
+            {
+                "name": "ProfilerUnsafeUtility / ManagedMemLabelCache",
+                "count": 2,
+                "bytes": 196704
+            },
+            {
+                "name": "Profiling / EtlWrapper",
+                "count": 6,
+                "bytes": 416
+            },
+            {
+                "name": "Profiling / FileStats",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "Profiling / MemoryProfilerStats",
+                "count": 5,
+                "bytes": 5444
+            },
+            {
+                "name": "Profiling / PhysicsProfilerModule",
+                "count": 1,
+                "bytes": 184
+            },
+            {
+                "name": "Profiling / PixWrapper",
+                "count": 6,
+                "bytes": 424
+            },
+            {
+                "name": "Profiling / PlayerConnection",
+                "count": 12,
+                "bytes": 4562
+            },
+            {
+                "name": "Profiling / PluginAPIHandler",
+                "count": 3,
+                "bytes": 1152
+            },
+            {
+                "name": "Profiling / Profiler",
+                "count": 71,
+                "bytes": 83192
+            },
+            {
+                "name": "Profiling / ProfilerConnection",
+                "count": 1,
+                "bytes": 4
+            },
+            {
+                "name": "Profiling / ProfilerManager",
+                "count": 1848,
+                "bytes": 776152
+            },
+            {
+                "name": "Profiling / RenderStats",
+                "count": 1,
+                "bytes": 680
+            },
+            {
+                "name": "Profiling / ScriptingProfiler",
+                "count": 2,
+                "bytes": 712
+            },
+            {
+                "name": "Profiling / SuperluminalWrapper",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Profiling / VTuneWrapper",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "RayTracing / gBuiltinShaderPropertySheetTemp",
+                "count": 4,
+                "bytes": 1752
+            },
+            {
+                "name": "Rendering / ComputeBuffers",
+                "count": 19,
+                "bytes": 1744
+            },
+            {
+                "name": "Rendering / D3D11GfxDevice",
+                "count": 399,
+                "bytes": 152072
+            },
+            {
+                "name": "Rendering / FrameDebugger",
+                "count": 1,
+                "bytes": 3184
+            },
+            {
+                "name": "Rendering / GfxDeviceClient",
+                "count": 335,
+                "bytes": 33713368
+            },
+            {
+                "name": "Rendering / GraphicsBuffers",
+                "count": 37,
+                "bytes": 3752
+            },
+            {
+                "name": "Rendering / GraphicsCaps",
+                "count": 3,
+                "bytes": 1655
+            },
+            {
+                "name": "Rendering / ImageDataStructs",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Rendering / MaterialPropertyBlock",
+                "count": 31,
+                "bytes": 4804
+            },
+            {
+                "name": "Rendering / MeshIDGenerator",
+                "count": 2,
+                "bytes": 552
+            },
+            {
+                "name": "Rendering / RenderTargetMap",
+                "count": 2,
+                "bytes": 6176
+            },
+            {
+                "name": "Rendering / ShaderLab",
+                "count": 2753,
+                "bytes": 228929
+            },
+            {
+                "name": "Rendering / SharedMesh Pool",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Rendering / SpriteIDGenerator",
+                "count": 2,
+                "bytes": 48
+            },
+            {
+                "name": "Rendering / TextureStructs",
+                "count": 3,
+                "bytes": 14360
+            },
+            {
+                "name": "Rendering / VirtualTextureUploadSurfaces",
+                "count": 2,
+                "bytes": 112
+            },
+            {
+                "name": "Serialization / SerializationCommandsCache",
+                "count": 822,
+                "bytes": 4017408
+            },
+            {
+                "name": "Serialization / TypeNameCache",
+                "count": 4,
+                "bytes": 36432
+            },
+            {
+                "name": "Serialization / TypeTreeCache",
+                "count": 30,
+                "bytes": 14968
+            },
+            {
+                "name": "SerializedFile / Library/unity default resources",
+                "count": 12,
+                "bytes": 22564
+            },
+            {
+                "name": "SerializedFile / Resources/unity_builtin_extra",
+                "count": 10,
+                "bytes": 19552
+            },
+            {
+                "name": "SerializedFile / globalgamemanagers",
+                "count": 13,
+                "bytes": 27450
+            },
+            {
+                "name": "SerializedFile / globalgamemanagers.assets",
+                "count": 13,
+                "bytes": 83128
+            },
+            {
+                "name": "System / ExecutableAndDlls",
+                "count": 9500,
+                "bytes": 28783196
+            },
+            {
+                "name": "Terrain Module / Interface",
+                "count": 2,
+                "bytes": 72
+            },
+            {
+                "name": "TerrainPhysics Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text / FontDirs",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text / FontFallbacks",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / BIDI Instances",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / Font Assets",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / HarfBuzz Buffers",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ICU Allocations",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / ICU Break Iterators",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ICU Data",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ItemizationService",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / TextGenerationInfo",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / TextGenerationInfoList",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "TextRendering / FreeType",
+                "count": 23,
+                "bytes": 1808
+            },
+            {
+                "name": "TextRendering Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UIElements / Renderer.MeshWriteDataPerWorker",
+                "count": 22,
+                "bytes": 1568
+            },
+            {
+                "name": "UIElements / Renderer.UIPainter2DPerWorker",
+                "count": 202,
+                "bytes": 860288
+            },
+            {
+                "name": "Umbra Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UnityConsent / UnityConsent",
+                "count": 1,
+                "bytes": 3280
+            },
+            {
+                "name": "UnityWebRequest / UnityWebRequest",
+                "count": 18,
+                "bytes": 4390
+            },
+            {
+                "name": "UnsafeUtility / Malloc(AudioKernel)",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UnsafeUtility / Malloc(Persistent)",
+                "count": 252,
+                "bytes": 1770846
+            },
+            {
+                "name": "UnsafeUtility / Malloc(Temp) Pool",
+                "count": 9,
+                "bytes": 2097160
+            },
+            {
+                "name": "Vehicles Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Virtual Texturing Module / Interface",
+                "count": 2,
+                "bytes": 752
+            }
+        ]
+    },
+    "after": {
+        "path": "after.snap",
+        "nativeObjects": 3865,
+        "nativeObjectBytes": 539852441,
+        "nativeAllocations": 84062,
+        "nativeAllocationBytes": 144305814,
+        "objectsByType": [
+            {
+                "name": "AudioManager",
+                "count": 1,
+                "bytes": 1289002
+            },
+            {
+                "name": "BoxCollider",
+                "count": 87,
+                "bytes": 20184
+            },
+            {
+                "name": "BuildSettings",
+                "count": 1,
+                "bytes": 539
+            },
+            {
+                "name": "Camera",
+                "count": 1,
+                "bytes": 4416
+            },
+            {
+                "name": "CharacterController",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "name": "ComputeShader",
+                "count": 118,
+                "bytes": 9636994
+            },
+            {
+                "name": "Cubemap",
+                "count": 7,
+                "bytes": 3150768
+            },
+            {
+                "name": "CubemapArray",
+                "count": 3,
+                "bytes": 8390400
+            },
+            {
+                "name": "DelayedCallManager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "GameObject",
+                "count": 346,
+                "bytes": 61632
+            },
+            {
+                "name": "GraphicsSettings",
+                "count": 1,
+                "bytes": 524
+            },
+            {
+                "name": "InputManager",
+                "count": 1,
+                "bytes": 9440
+            },
+            {
+                "name": "Light",
+                "count": 8,
+                "bytes": 8896
+            },
+            {
+                "name": "LightProbeGroup",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "LightProbes",
+                "count": 1,
+                "bytes": 67604
+            },
+            {
+                "name": "LightingSettings",
+                "count": 2,
+                "bytes": 160
+            },
+            {
+                "name": "LightmapSettings",
+                "count": 1,
+                "bytes": 536
+            },
+            {
+                "name": "Material",
+                "count": 110,
+                "bytes": 633383
+            },
+            {
+                "name": "Mesh",
+                "count": 101,
+                "bytes": 2479236
+            },
+            {
+                "name": "MeshFilter",
+                "count": 306,
+                "bytes": 19584
+            },
+            {
+                "name": "MeshRenderer",
+                "count": 306,
+                "bytes": 177480
+            },
+            {
+                "name": "MonoBehaviour",
+                "count": 18,
+                "bytes": 6048
+            },
+            {
+                "name": "MonoManager",
+                "count": 1,
+                "bytes": 112462
+            },
+            {
+                "name": "MonoScript",
+                "count": 1489,
+                "bytes": 788464
+            },
+            {
+                "name": "MultiplayerManager",
+                "count": 1,
+                "bytes": 56
+            },
+            {
+                "name": "NavMeshProjectSettings",
+                "count": 1,
+                "bytes": 1760
+            },
+            {
+                "name": "NavMeshSettings",
+                "count": 1,
+                "bytes": 56
+            },
+            {
+                "name": "OcclusionCullingSettings",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "ParticleSystem",
+                "count": 3,
+                "bytes": 44580
+            },
+            {
+                "name": "ParticleSystemRenderer",
+                "count": 3,
+                "bytes": 6468
+            },
+            {
+                "name": "Physics2DSettings",
+                "count": 1,
+                "bytes": 376
+            },
+            {
+                "name": "PhysicsManager",
+                "count": 1,
+                "bytes": 248
+            },
+            {
+                "name": "PlayerSettings",
+                "count": 1,
+                "bytes": 1461
+            },
+            {
+                "name": "PreloadData",
+                "count": 2,
+                "bytes": 476
+            },
+            {
+                "name": "QualitySettings",
+                "count": 1,
+                "bytes": 384
+            },
+            {
+                "name": "ReflectionProbe",
+                "count": 1,
+                "bytes": 224
+            },
+            {
+                "name": "RenderSettings",
+                "count": 1,
+                "bytes": 448
+            },
+            {
+                "name": "RenderTexture",
+                "count": 74,
+                "bytes": 461716810
+            },
+            {
+                "name": "ResourceManager",
+                "count": 1,
+                "bytes": 100416
+            },
+            {
+                "name": "RuntimeInitializeOnLoadManager",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "ScriptableObject",
+                "count": 254,
+                "bytes": 86256
+            },
+            {
+                "name": "Shader",
+                "count": 93,
+                "bytes": 17574283
+            },
+            {
+                "name": "ShaderNameRegistry",
+                "count": 1,
+                "bytes": 24837
+            },
+            {
+                "name": "StreamingManager",
+                "count": 1,
+                "bytes": 88
+            },
+            {
+                "name": "TagManager",
+                "count": 1,
+                "bytes": 1800
+            },
+            {
+                "name": "Texture2D",
+                "count": 141,
+                "bytes": 20041269
+            },
+            {
+                "name": "Texture2DArray",
+                "count": 8,
+                "bytes": 603279
+            },
+            {
+                "name": "Texture3D",
+                "count": 9,
+                "bytes": 12653936
+            },
+            {
+                "name": "TimeManager",
+                "count": 1,
+                "bytes": 1264
+            },
+            {
+                "name": "TrailRenderer",
+                "count": 2,
+                "bytes": 2328
+            },
+            {
+                "name": "Transform",
+                "count": 346,
+                "bytes": 107520
+            },
+            {
+                "name": "UnityConnectSettings",
+                "count": 1,
+                "bytes": 1090
+            },
+            {
+                "name": "VFXManager",
+                "count": 1,
+                "bytes": 22360
+            }
+        ],
+        "allocationsByRoot": [
+            {
+                "name": "Animation / BlendShapeBinding",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation / ScriptPropertyBinding",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation Module / AnimationBindingCache",
+                "count": 3,
+                "bytes": 1016
+            },
+            {
+                "name": "Animation Module / AnimationManager",
+                "count": 1,
+                "bytes": 40
+            },
+            {
+                "name": "Animation Module / AnimationStateNetworkInterface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Animation Module / BoundPropertyManager",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "Animation Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / AudioSource filters",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Audio Module / OnAudioFilterRead filters",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "CaptureScreenshot Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Cloth Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "ContentLoadSystem / LoadedContentOverhead",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "File System / FileSystem",
+                "count": 9,
+                "bytes": 1073
+            },
+            {
+                "name": "File System / Managed Archive File System",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "Font Engine / Current File Path",
+                "count": 1,
+                "bytes": 40
+            },
+            {
+                "name": "Font Engine / Font Face Cache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / FontReferences",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Font Engine / FreeType",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / GPOS Marshalling",
+                "count": 5,
+                "bytes": 160
+            },
+            {
+                "name": "Font Engine / GSUB Marshalling",
+                "count": 6,
+                "bytes": 192
+            },
+            {
+                "name": "Font Engine / Layout Tables",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Font Engine / Pair Adjustment Lookup",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Font Engine / Positioning Tables",
+                "count": 1,
+                "bytes": 128
+            },
+            {
+                "name": "Font Engine / Substitution Tables",
+                "count": 2,
+                "bytes": 136
+            },
+            {
+                "name": "ForceFieldManager / ",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "IMGUI / Text Generator cache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "IMGUI / Text Generators",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "IMGUI Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Identifiers / Identifiers",
+                "count": 6,
+                "bytes": 605
+            },
+            {
+                "name": "Input Module Impl / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Insights Module / InsightsAnalytics",
+                "count": 91,
+                "bytes": 293380
+            },
+            {
+                "name": "Job System / BackgroundJobQueue",
+                "count": 168,
+                "bytes": 3964800
+            },
+            {
+                "name": "Log System / LogMessages",
+                "count": 1,
+                "bytes": 112
+            },
+            {
+                "name": "Managers / AllCameras",
+                "count": 2,
+                "bytes": 40
+            },
+            {
+                "name": "Managers / AssetBundleManager",
+                "count": 1,
+                "bytes": 512
+            },
+            {
+                "name": "Managers / AssetReferenceStorage",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Managers / AsyncReadManager",
+                "count": 9,
+                "bytes": 3718
+            },
+            {
+                "name": "Managers / AsyncReadManagerMetrics",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "Managers / AsyncUploadManager",
+                "count": 229,
+                "bytes": 16813160
+            },
+            {
+                "name": "Managers / BaseObjectManager",
+                "count": 57,
+                "bytes": 419880
+            },
+            {
+                "name": "Managers / BatchDelete",
+                "count": 4,
+                "bytes": 1049408
+            },
+            {
+                "name": "Managers / BurstCompilerService",
+                "count": 10754,
+                "bytes": 2102954
+            },
+            {
+                "name": "Managers / CanvasManager",
+                "count": 1,
+                "bytes": 3392
+            },
+            {
+                "name": "Managers / Cloth Manager",
+                "count": 3,
+                "bytes": 504
+            },
+            {
+                "name": "Managers / ContentLoadSystem",
+                "count": 37,
+                "bytes": 10120
+            },
+            {
+                "name": "Managers / ContentNamespaceManager",
+                "count": 1,
+                "bytes": 48
+            },
+            {
+                "name": "Managers / DSPGraph",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "Managers / ExecutionOrderManager",
+                "count": 2,
+                "bytes": 1912
+            },
+            {
+                "name": "Managers / GUIEventManager",
+                "count": 2,
+                "bytes": 56
+            },
+            {
+                "name": "Managers / IntermediateRendererManager",
+                "count": 4,
+                "bytes": 1664
+            },
+            {
+                "name": "Managers / LODGroupManager",
+                "count": 7,
+                "bytes": 301
+            },
+            {
+                "name": "Managers / LayerTagManager",
+                "count": 29,
+                "bytes": 2080
+            },
+            {
+                "name": "Managers / LazyScriptCache",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Managers / ManagedAttributeManager",
+                "count": 5,
+                "bytes": 17032
+            },
+            {
+                "name": "Managers / MeshVertexFormatManager",
+                "count": 17,
+                "bytes": 6552
+            },
+            {
+                "name": "Managers / Mono VM",
+                "count": 4,
+                "bytes": 219672
+            },
+            {
+                "name": "Managers / MonoDomain",
+                "count": 225,
+                "bytes": 27802
+            },
+            {
+                "name": "Managers / ObjectDispatcher",
+                "count": 3,
+                "bytes": 960
+            },
+            {
+                "name": "Managers / PathNameManager",
+                "count": 32,
+                "bytes": 3176
+            },
+            {
+                "name": "Managers / RTTI",
+                "count": 106,
+                "bytes": 33072
+            },
+            {
+                "name": "Managers / RendererUpdateManager",
+                "count": 1,
+                "bytes": 1456
+            },
+            {
+                "name": "Managers / RuntimeSceneManager",
+                "count": 4,
+                "bytes": 392
+            },
+            {
+                "name": "Managers / SerializationBackwardsCompatibility",
+                "count": 75,
+                "bytes": 5360
+            },
+            {
+                "name": "Managers / SharedStrings",
+                "count": 2419,
+                "bytes": 68301
+            },
+            {
+                "name": "Managers / Sorting Group Manager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "Managers / SpriteAtlasManager",
+                "count": 1,
+                "bytes": 112
+            },
+            {
+                "name": "Managers / TextureStreamingManager",
+                "count": 3,
+                "bytes": 1376
+            },
+            {
+                "name": "Managers / TransferFunctionScriptingTraitsCache",
+                "count": 2,
+                "bytes": 144
+            },
+            {
+                "name": "Managers / TypeTreeHashBasedCache",
+                "count": 2,
+                "bytes": 344
+            },
+            {
+                "name": "Managers / VideoManager",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / CanvasBatchRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / DetailInstanceIntermediateRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / DetailMeshIntermediateRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / FixedSize 112",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / FixedSize 56",
+                "count": 3,
+                "bytes": 32848
+            },
+            {
+                "name": "MemoryPools / FixedSize 96",
+                "count": 3,
+                "bytes": 32848
+            },
+            {
+                "name": "MemoryPools / IndirectMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / InstancedMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / InstancedProceduralMeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / MeshRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / ProceduralRenderers",
+                "count": 2,
+                "bytes": 144
+            },
+            {
+                "name": "MemoryPools / QuadTreeBatchRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / QuadTreeRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingGeometryInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingGeometryInstanceRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceListRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMeshInstanceRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingMultiGeometryInstanceListIndirectRenderer",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RayTracingQuadTreeNodeRenderers",
+                "count": 1,
+                "bytes": 72
+            },
+            {
+                "name": "MemoryPools / RenderBufferEntries",
+                "count": 3,
+                "bytes": 4176
+            },
+            {
+                "name": "MemoryPools / RenderTextureEntries",
+                "count": 3,
+                "bytes": 4176
+            },
+            {
+                "name": "MemoryProfiling / MemoryProfiler",
+                "count": 287,
+                "bytes": 747954
+            },
+            {
+                "name": "MemoryProfiling / MemorySnapshotManager",
+                "count": 1,
+                "bytes": 80
+            },
+            {
+                "name": "Objects / ",
+                "count": 51915,
+                "bytes": 42951272
+            },
+            {
+                "name": "ParticleSystem Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "ParticleSystem Module / ParticleSystemManager",
+                "count": 2,
+                "bytes": 576
+            },
+            {
+                "name": "PersistentManager.Remapper / Remapper",
+                "count": 18,
+                "bytes": 508176
+            },
+            {
+                "name": "Physics / BackendSystem",
+                "count": 4,
+                "bytes": 968
+            },
+            {
+                "name": "Physics / NvCloth",
+                "count": 6,
+                "bytes": 176
+            },
+            {
+                "name": "Physics / PhysX",
+                "count": 369,
+                "bytes": 379596
+            },
+            {
+                "name": "Physics / PhysX Shape Ignore Pairs",
+                "count": 2,
+                "bytes": 544
+            },
+            {
+                "name": "Physics / PhysXContactsBuffer",
+                "count": 1,
+                "bytes": 64
+            },
+            {
+                "name": "Physics / PhysXJointBreakEventsBuffer",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Physics / PhysXScratchBuffer",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "Physics / PhysXTriggerEventsBuffer",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Physics / Physics Manager Statics",
+                "count": 6,
+                "bytes": 2976
+            },
+            {
+                "name": "Physics Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Physics2D / HighLevel",
+                "count": 8,
+                "bytes": 106496
+            },
+            {
+                "name": "Physics2D / HighLevel.Box2Dv2",
+                "count": 10,
+                "bytes": 46344
+            },
+            {
+                "name": "Physics2D / HighLevel.Profiler",
+                "count": 1,
+                "bytes": 360
+            },
+            {
+                "name": "Physics2D / LowLevel",
+                "count": 1,
+                "bytes": 1744
+            },
+            {
+                "name": "Physics2D / LowLevel.Box2Dv3",
+                "count": 153,
+                "bytes": 25992
+            },
+            {
+                "name": "Physics2D / LowLevel.PhysicsComposer",
+                "count": 2,
+                "bytes": 744
+            },
+            {
+                "name": "Physics2D / LowLevel.WorldManager",
+                "count": 15,
+                "bytes": 97048
+            },
+            {
+                "name": "Physics2D / LowLevel.WorldRenderer",
+                "count": 1,
+                "bytes": 1312
+            },
+            {
+                "name": "ProfilerUnsafeUtility / ManagedMemLabelCache",
+                "count": 2,
+                "bytes": 196704
+            },
+            {
+                "name": "Profiling / EtlWrapper",
+                "count": 6,
+                "bytes": 416
+            },
+            {
+                "name": "Profiling / FileStats",
+                "count": 1,
+                "bytes": 136
+            },
+            {
+                "name": "Profiling / MemoryProfilerStats",
+                "count": 5,
+                "bytes": 5444
+            },
+            {
+                "name": "Profiling / PhysicsProfilerModule",
+                "count": 1,
+                "bytes": 184
+            },
+            {
+                "name": "Profiling / PixWrapper",
+                "count": 6,
+                "bytes": 424
+            },
+            {
+                "name": "Profiling / PlayerConnection",
+                "count": 12,
+                "bytes": 4562
+            },
+            {
+                "name": "Profiling / PluginAPIHandler",
+                "count": 3,
+                "bytes": 1152
+            },
+            {
+                "name": "Profiling / Profiler",
+                "count": 71,
+                "bytes": 83192
+            },
+            {
+                "name": "Profiling / ProfilerConnection",
+                "count": 1,
+                "bytes": 4
+            },
+            {
+                "name": "Profiling / ProfilerManager",
+                "count": 1848,
+                "bytes": 776152
+            },
+            {
+                "name": "Profiling / RenderStats",
+                "count": 1,
+                "bytes": 680
+            },
+            {
+                "name": "Profiling / ScriptingProfiler",
+                "count": 2,
+                "bytes": 712
+            },
+            {
+                "name": "Profiling / SuperluminalWrapper",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Profiling / VTuneWrapper",
+                "count": 1,
+                "bytes": 24
+            },
+            {
+                "name": "RayTracing / gBuiltinShaderPropertySheetTemp",
+                "count": 4,
+                "bytes": 1752
+            },
+            {
+                "name": "Rendering / ComputeBuffers",
+                "count": 19,
+                "bytes": 1744
+            },
+            {
+                "name": "Rendering / D3D11GfxDevice",
+                "count": 399,
+                "bytes": 152072
+            },
+            {
+                "name": "Rendering / FrameDebugger",
+                "count": 1,
+                "bytes": 3184
+            },
+            {
+                "name": "Rendering / GfxDeviceClient",
+                "count": 335,
+                "bytes": 33713368
+            },
+            {
+                "name": "Rendering / GraphicsBuffers",
+                "count": 37,
+                "bytes": 3752
+            },
+            {
+                "name": "Rendering / GraphicsCaps",
+                "count": 3,
+                "bytes": 1655
+            },
+            {
+                "name": "Rendering / ImageDataStructs",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Rendering / MaterialPropertyBlock",
+                "count": 31,
+                "bytes": 4804
+            },
+            {
+                "name": "Rendering / MeshIDGenerator",
+                "count": 2,
+                "bytes": 552
+            },
+            {
+                "name": "Rendering / RenderTargetMap",
+                "count": 2,
+                "bytes": 6176
+            },
+            {
+                "name": "Rendering / ShaderLab",
+                "count": 2753,
+                "bytes": 228929
+            },
+            {
+                "name": "Rendering / SharedMesh Pool",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Rendering / SpriteIDGenerator",
+                "count": 2,
+                "bytes": 48
+            },
+            {
+                "name": "Rendering / TextureStructs",
+                "count": 3,
+                "bytes": 14360
+            },
+            {
+                "name": "Rendering / VirtualTextureUploadSurfaces",
+                "count": 2,
+                "bytes": 112
+            },
+            {
+                "name": "Serialization / SerializationCommandsCache",
+                "count": 822,
+                "bytes": 4017408
+            },
+            {
+                "name": "Serialization / TypeNameCache",
+                "count": 4,
+                "bytes": 36432
+            },
+            {
+                "name": "Serialization / TypeTreeCache",
+                "count": 30,
+                "bytes": 14968
+            },
+            {
+                "name": "SerializedFile / Library/unity default resources",
+                "count": 12,
+                "bytes": 22564
+            },
+            {
+                "name": "SerializedFile / Resources/unity_builtin_extra",
+                "count": 10,
+                "bytes": 19552
+            },
+            {
+                "name": "SerializedFile / globalgamemanagers",
+                "count": 13,
+                "bytes": 27450
+            },
+            {
+                "name": "SerializedFile / globalgamemanagers.assets",
+                "count": 13,
+                "bytes": 83128
+            },
+            {
+                "name": "System / ExecutableAndDlls",
+                "count": 9839,
+                "bytes": 28824682
+            },
+            {
+                "name": "Terrain Module / Interface",
+                "count": 2,
+                "bytes": 72
+            },
+            {
+                "name": "TerrainPhysics Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text / FontDirs",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text / FontFallbacks",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / BIDI Instances",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / Font Assets",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / HarfBuzz Buffers",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ICU Allocations",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / ICU Break Iterators",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ICU Data",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "Text Engine / ItemizationService",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / TextGenerationInfo",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Text Engine / TextGenerationInfoList",
+                "count": 1,
+                "bytes": 32
+            },
+            {
+                "name": "TextRendering / FreeType",
+                "count": 23,
+                "bytes": 1808
+            },
+            {
+                "name": "TextRendering Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UIElements / Renderer.MeshWriteDataPerWorker",
+                "count": 22,
+                "bytes": 1568
+            },
+            {
+                "name": "UIElements / Renderer.UIPainter2DPerWorker",
+                "count": 202,
+                "bytes": 860288
+            },
+            {
+                "name": "Umbra Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UnityConsent / UnityConsent",
+                "count": 1,
+                "bytes": 3280
+            },
+            {
+                "name": "UnityWebRequest / UnityWebRequest",
+                "count": 18,
+                "bytes": 4390
+            },
+            {
+                "name": "UnsafeUtility / Malloc(AudioKernel)",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "UnsafeUtility / Malloc(Persistent)",
+                "count": 262,
+                "bytes": 1771006
+            },
+            {
+                "name": "UnsafeUtility / Malloc(Temp) Pool",
+                "count": 14,
+                "bytes": 3407880
+            },
+            {
+                "name": "Vehicles Module / Interface",
+                "count": 1,
+                "bytes": 8
+            },
+            {
+                "name": "Virtual Texturing Module / Interface",
+                "count": 2,
+                "bytes": 752
+            }
+        ]
+    },
+    "note": "Finite before/after capture comparison. Snapshot capture and audit bookkeeping have their own allocations; increased allocator pools do not alone prove a leak."
+}

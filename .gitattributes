@@ -5,6 +5,8 @@
 *.shadergraph text eol=lf
 *.png binary
 *.exr binary
+*.pdf binary
+*.snap binary
 *.asset text eol=lf
 *.unity text eol=lf
 *.prefab text eol=lf
