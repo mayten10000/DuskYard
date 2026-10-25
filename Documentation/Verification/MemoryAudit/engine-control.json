@@ -1,0 +1,136 @@
+{
+  "unity": "6000.3.5f1",
+  "date": "2026-10-25",
+  "graphics": "Direct3D11",
+  "method": "Independent control project; empty or 300 standard cubes, HDRP settings copied, no Dusk Yard combat/pose/VFX scripts. Short controls approximately 15 s; final controls 60 s. Not FPS measurements.",
+  "cases": [
+    {
+      "case": "Dusk Yard: 180 s audit",
+      "log": "main-audit.log",
+      "shutdownBytes": 594923,
+      "managerBytes": 539667,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Dusk Yard: showcase with diagnostic flags",
+      "log": "main-diagnostics.log",
+      "shutdownBytes": 633955,
+      "managerBytes": 539667,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Empty built-in renderer",
+      "log": "empty-builtin.log",
+      "shutdownBytes": 49870,
+      "managerBytes": 8915,
+      "nativeArrayBytes": 0,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Empty + Input System",
+      "log": "empty-input.log",
+      "shutdownBytes": 50274,
+      "managerBytes": 8947,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Built-in + 300 cubes + Input System",
+      "log": "populated-input.log",
+      "shutdownBytes": 53954,
+      "managerBytes": 9459,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Same + ProfilerRecorder",
+      "log": "populated-recorder.log",
+      "shutdownBytes": 53954,
+      "managerBytes": 9459,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Empty HDRP Linear",
+      "log": "empty-hdrp-linear.log",
+      "shutdownBytes": 51138,
+      "managerBytes": 9715,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Empty HDRP + CharacterController",
+      "log": "empty-hdrp-controller.log",
+      "shutdownBytes": 51138,
+      "managerBytes": 9715,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "Empty HDRP + 3 particle systems",
+      "log": "empty-hdrp-particles.log",
+      "shutdownBytes": 51138,
+      "managerBytes": 9715,
+      "nativeArrayBytes": 372,
+      "explicitLeakDiagnostic": false,
+      "persistentAllocationCount": 0,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "HDRP: lit cubes + optional components, 60 s",
+      "log": "hdrp-combined-60s.log",
+      "shutdownBytes": 611426,
+      "managerBytes": 534003,
+      "nativeArrayBytes": 1508,
+      "explicitLeakDiagnostic": true,
+      "persistentAllocationCount": 8,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": false
+    },
+    {
+      "case": "HDRP: lit cubes only, 60 s, diagnostic flags",
+      "log": "hdrp-lit-60s-diagnostics.log",
+      "shutdownBytes": 611426,
+      "managerBytes": 534003,
+      "nativeArrayBytes": 1508,
+      "explicitLeakDiagnostic": true,
+      "persistentAllocationCount": 8,
+      "shaderOrExceptionErrors": false,
+      "hdShadowRequestTrace": true
+    }
+  ],
+  "excluded": [
+    {
+      "case": "Initial HDRP Gamma control",
+      "reason": "Shader kernel errors; corrected to Linear and repeated. Not used for memory comparison."
+    }
+  ],
+  "interpretation": "Large Manager label reproduced in standard lit HDRP scene. Labels do not identify individual allocations. Control persistent-allocation traces include HDRP HDShadowRequest; explicit persistent-leak diagnostics are absent in the measured main player logs. The controls do not prove absence of every engine/driver leak."
+}

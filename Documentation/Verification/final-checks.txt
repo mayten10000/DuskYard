@@ -6,5 +6,8 @@ PASS: target READY position/rotation error0
 PASS: runtime errors/warnings0, Gen0 collections0, stable active object count
 PASS:5 VFX materials Transparent/ZWrite0/queue3000
 PASS:2 memory snapshots loaded and compared with built-in Unity reader
-LIMIT: historical active time by6 blocks not recorded
-PENDING: external sharing URL; local delivery chosen by user
+LIMIT: time by 6 blocks reconstructed as an approximate 23-hour cycle; no active-work timer
+PASS: public GitHub main branch and Google Drive anyone/reader access verified
+
+PASS: independent engine control summaries and raw logs captured
+LIMIT: shutdown MemoryLeaks remains; lit HDRP controls reproduce large Manager label and show HDRP HDShadowRequest persistent diagnostics; no blanket engine-leak-free claim
